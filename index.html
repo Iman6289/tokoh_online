@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toko Buah Segar - Jual Buah Online</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>Toko Buah Segar</h1>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#home">Beranda</a></li>
+                    <li><a href="#products">Produk</a></li>
+                    <li><a href="#about">Tentang</a></li>
+                    <li><a href="#contact">Kontak</a></li>
+                </ul>
+            </nav>
+            <div class="cart-icon">
+                <span class="cart-count">0</span>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6 2L3 6V20C3 20.5304 3.21071 21.0391 3.58579 21.4142C3.96086 21.7893 4.46957 22 5 22H19C19.5304 22 20.0391 21.7893 20.4142 21.4142C20.7893 21.0391 21 20.5304 21 20V6L18 2H6Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M3 6H21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M16 10C16 11.0609 15.5786 12.0783 14.8284 12.8284C14.0783 13.5786 13.0609 14 12 14C10.9391 14 9.92172 13.5786 9.17157 12.8284C8.42143 12.0783 8 11.0609 8 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Buah Segar Langsung dari Kebun</h2>
+                <p>Nikmati berbagai macam buah-buahan segar dengan kualitas terbaik dan harga terjangkau</p>
+                <button class="cta-button" onclick="scrollToProducts()">Belanja Sekarang</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products">
+        <div class="container">
+            <h2 class="section-title">Produk Kami</h2>
+            <div class="product-grid">
+                <!-- Product 1 -->
+                <div class="product-card">
+                    <img src="https://placehold.co/300x200?text=Apel+Merah" alt="Apel merah segar dengan kulit mengkilap dan daun hijau" class="product-image">
+                    <div class="product-info">
+                        <h3>Apel Merah</h3>
+                        <p class="product-description">Apel merah segar dengan rasa manis dan renyah</p>
+                        <div class="product-price">Rp 25.000/kg</div>
+                        <div class="product-actions">
+                            <button class="add-to-cart" onclick="addToCart(1)">Tambah ke Keranjang</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product-card">
+                    <img src="https://placehold.co/300x200?text=Pisang+Mas" alt="Pisang mas kuning segar dengan tekstur kulit alami" class="product-image">
+                    <div class="product-info">
+                        <h3>Pisang Mas</h3>
+                        <p class="product-description">Pisang mas manis dengan tekstur lembut</p>
+                        <div class="product-price">Rp 15.000/kg</div>
+                        <div class="product-actions">
+                            <button class="add-to-cart" onclick="addToCart(2)">Tambah ke Keranjang</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product-card">
+                    <img src="https://placehold.co/300x200?text=Jeruk+Manis" alt="Jeruk manis segar dengan warna oranye cerah" class="product-image">
+                    <div class="product-info">
+                        <h3>Jeruk Manis</h3>
+                        <p class="product-description">Jeruk manis segar kaya vitamin C</p>
+                        <div class="product-price">Rp 20.000/kg</div>
+                        <div class="product-actions">
+                            <button class="add-to-cart" onclick="addToCart(3)">Tambah ke Keranjang</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="product-card">
+                    <img src="https://placehold.co/300x200?text=Anggur+Hijau" alt="Anggur hijau segar dengan buah berkilau dan daun" class="product-image">
+                    <div class="product-info">
+                        <h3>Anggur Hijau</h3>
+                        <p class="product-description">Anggur hijau segar dengan rasa manis asam</p>
+                        <div class="product-price">Rp 35.000/kg</div>
+                        <div class="product-actions">
+                            <button class="add-to-cart" onclick="addToCart(4)">Tambah ke Keranjang</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 5 -->
+                <div class="product-card">
+                    <img src="https://placehold.co/300x200?text=Mangga+Harum+Manis" alt="Mangga harum manis dengan warna kuning kehijauan" class="product-image">
+                    <div class="product-info">
+                        <h3>Mangga Harum Manis</h3>
+                        <p class="product-description">Mangga harum manis dengan daging tebal</p>
+                        <div class="product-price">Rp 30.000/kg</div>
+                        <div class="product-actions">
+                            <button class="add-to-cart" onclick="addToCart(5)">Tambah ke Keranjang</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 6 -->
+                <div class="product-card">
+                    <img src="https://placehold.co/300x200?text=Semangka+Merah" alt="Semangka merah segar dengan potongan yang juicy" class="product-image">
+                    <div class="product-info">
+                        <h3>Semangka Merah</h3>
+                        <p class="product-description">Semangka merah segar dan menyegarkan</p>
+                        <div class="product-price">Rp 18.000/kg</div>
+                        <div class="product-actions">
+                            <button class="add-to-cart" onclick="addToCart(6)">Tambah ke Keranjang</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">Tentang Kami</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Toko Buah Segar adalah penyedia buah-buahan berkualitas tinggi yang langsung dipetik dari kebun terpercaya. Kami berkomitmen untuk menyediakan buah segar dengan harga terjangkau untuk semua pelanggan.</p>
+                    <p>Dengan pengalaman lebih dari 10 tahun di industri buah-buahan, kami memahami betul bagaimana memilih buah terbaik untuk Anda.</p>
+                </div>
+                <div class="about-image">
+                    <img src="https://placehold.co/400x300?text=Kebun+Buah+Segar" alt="Pemandangan kebun buah dengan pohon-pohon berbuah lebat dan pekerja sedang memanen">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Hubungi Kami</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Informasi Kontak</h3>
+                    <p><strong>Alamat:</strong> Jl. Buah Segar No. 123, Bangka belitung</p>
+                    <p><strong>Telepon:</strong> 0838-4617-7424</p>
+                    <p><strong>Email:</strong> nami22711@gmail.com</p>
+                    <p><strong>Jam Operasional:</strong> Senin - Minggu, 08:00 - 20:00 WIB</p>
+                </div>
+                <div class="contact-form">
+                    <h3>Kirim Pesan</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" placeholder="Nama Lengkap" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" placeholder="Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" placeholder="Pesan Anda" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-button">Kirim Pesan</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Toko Buah Segar</h3>
+                    <p>Penyedia buah-buahan segar berkualitas tinggi dengan harga terjangkau.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Link Cepat</h3>
+                    <ul>
+                        <li><a href="#home">Beranda</a></li>
+                        <li><a href="#products">Produk</a></li>
+                        <li><a href="#about">Tentang</a></li>
+                        <li><a href="#contact">Kontak</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Ikuti Kami</h3>
+                    <div class="social-links">
+                        <a href="#">Facebook</a>
+                        <a href="#">Instagram</a>
+                        <a href="#">Twitter</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Toko Buah Segar. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Shopping Cart Modal -->
+    <div id="cartModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Keranjang Belanja</h2>
+            <div id="cartItems" class="cart-items">
+                <!-- Cart items will be added here dynamically -->
+            </div>
+            <div class="cart-total">
+                <h3>Total: <span id="cartTotal">Rp 0</span></h3>
+            </div>
+            <button class="checkout-button">Checkout</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
